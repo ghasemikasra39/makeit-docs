@@ -29,15 +29,13 @@ A personal desktop app that converts gaming clips to vertical format and posts t
 
 ### Terms of Service URL
 ```
-https://YOUR-USERNAME.github.io/makeit-docs/terms.html
+https://ghasemikasra39.github.io/makeit-docs/terms.html
 ```
-(Replace with your actual hosted URL)
 
 ### Privacy Policy URL
 ```
-https://YOUR-USERNAME.github.io/makeit-docs/privacy.html
+https://ghasemikasra39.github.io/makeit-docs/privacy.html
 ```
-(Replace with your actual hosted URL)
 
 ### Platform
 Select: **Desktop**
