@@ -4,217 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - MakeIt</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            background: #f5f5f5;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 40px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #1a1a2e;
-        }
-        .updated {
-            color: #666;
-            margin-bottom: 30px;
-            font-size: 0.9rem;
-        }
-        h2 {
-            font-size: 1.3rem;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            color: #1a1a2e;
-        }
-        h3 {
-            font-size: 1.1rem;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            color: #333;
-        }
-        p {
-            margin-bottom: 15px;
-            color: #444;
-        }
-        ul, ol {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-        li {
-            margin-bottom: 8px;
-            color: #444;
-        }
-        a {
-            color: #667eea;
-        }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: #667eea;
-            text-decoration: none;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background: #f5f5f5;
-        }
-    </style>
+    <meta name="description" content="Privacy Policy for MakeIt gaming content automation application.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <a href="index.html" class="back-link">← Back to Home</a>
-            
-            <h1>Privacy Policy</h1>
-            <p class="updated">Last updated: August 10, 2026</p>
-            
-            <h2>1. Introduction</h2>
-            <p>This Privacy Policy describes how MakeIt ("the Application", "we", "our") handles information when you use our desktop application for gaming content automation.</p>
-            <p>MakeIt is a personal automation tool designed for individual content creators. We are committed to protecting your privacy and being transparent about our data practices.</p>
-            
-            <h2>2. Information We Collect</h2>
-            
-            <h3>2.1 Information You Provide</h3>
-            <ul>
-                <li><strong>API Credentials:</strong> TikTok and Instagram API tokens that you configure in the application</li>
-                <li><strong>AWS Credentials:</strong> Amazon S3 access keys for temporary file hosting</li>
-                <li><strong>Video Content:</strong> Gameplay recordings that you process through the application</li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🎮</span>
+                <span class="logo-text">MakeIt</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="support.html" class="nav-link">Support</a></li>
             </ul>
-            
-            <h3>2.2 Information from Third-Party Platforms</h3>
-            <p>When you connect your TikTok account, we receive:</p>
-            <ul>
-                <li>OAuth access tokens (for posting on your behalf)</li>
-                <li>Your TikTok user ID</li>
-                <li>Post IDs for content we upload</li>
-            </ul>
-            
-            <h3>2.3 Information We Do NOT Collect</h3>
-            <ul>
-                <li>We do not collect personal information beyond what's needed for the API connections</li>
-                <li>We do not track your usage or behavior</li>
-                <li>We do not collect analytics or telemetry</li>
-                <li>We do not have access to your TikTok followers, messages, or other account data</li>
-            </ul>
-            
-            <h2>3. How We Use Information</h2>
-            <table>
-                <tr>
-                    <th>Data Type</th>
-                    <th>Purpose</th>
-                    <th>Storage Location</th>
-                </tr>
-                <tr>
-                    <td>API Credentials</td>
-                    <td>Authenticate with TikTok/Instagram APIs to post content</td>
-                    <td>Local files on your computer only</td>
-                </tr>
-                <tr>
-                    <td>Video Files</td>
-                    <td>Process and convert for social media posting</td>
-                    <td>Temporarily on AWS S3, deleted after posting</td>
-                </tr>
-                <tr>
-                    <td>Post History</td>
-                    <td>Track successful posts and avoid duplicates</td>
-                    <td>Local SQLite database on your computer</td>
-                </tr>
-            </table>
-            
-            <h2>4. Data Storage and Security</h2>
-            
-            <h3>4.1 Local Storage</h3>
-            <p>All sensitive data (API keys, credentials, configuration) is stored locally on your computer in configuration files. We recommend:</p>
-            <ul>
-                <li>Keeping your credentials file secure and not sharing it</li>
-                <li>Using your operating system's security features</li>
-                <li>Not committing credentials to version control</li>
-            </ul>
-            
-            <h3>4.2 Temporary Cloud Storage</h3>
-            <p>Video files are temporarily uploaded to Amazon S3 to provide URLs for TikTok's Content Posting API. These files are:</p>
-            <ul>
-                <li>Uploaded to your own AWS S3 bucket (that you configure)</li>
-                <li>Automatically deleted after successful posting</li>
-                <li>Deleted within 24 hours even if posting fails</li>
-            </ul>
-            
-            <h2>5. Data Sharing</h2>
-            <p>We do not sell, rent, or share your personal information with third parties. Data is only shared with:</p>
-            <ul>
-                <li><strong>TikTok:</strong> Video content and captions you choose to post</li>
-                <li><strong>Instagram:</strong> Video content and captions you choose to post</li>
-                <li><strong>Amazon Web Services:</strong> Temporary video file hosting (in your own bucket)</li>
-            </ul>
-            <p>All sharing is initiated by you and necessary for the Application's core functionality.</p>
-            
-            <h2>6. Your Rights and Choices</h2>
-            <p>You have full control over your data:</p>
-            <ul>
-                <li><strong>Access:</strong> All data is stored locally on your computer and you can view it anytime</li>
-                <li><strong>Deletion:</strong> Delete any local files to remove your data completely</li>
-                <li><strong>Revocation:</strong> Revoke TikTok/Instagram access through their respective settings pages</li>
-                <li><strong>Disconnect:</strong> Remove your API credentials from the configuration to stop all API access</li>
-            </ul>
-            
-            <h2>7. TikTok Data Usage</h2>
-            <p>In compliance with TikTok's developer requirements:</p>
-            <ul>
-                <li>We only request the minimum permissions needed (video.upload, video.publish)</li>
-                <li>We only access your account to post content you explicitly choose to share</li>
-                <li>We do not access your followers, following list, likes, or messages</li>
-                <li>We do not store TikTok data beyond what's needed for posting functionality</li>
-                <li>Access tokens are stored securely and only used for their intended purpose</li>
-            </ul>
-            
-            <h2>8. Children's Privacy</h2>
-            <p>MakeIt is not intended for use by anyone under the age of 13. We do not knowingly collect information from children under 13.</p>
-            
-            <h2>9. Changes to This Policy</h2>
-            <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.</p>
-            
-            <h2>10. Contact Us</h2>
-            <p>If you have questions about this Privacy Policy or our data practices, please contact:</p>
-            <p>Email: ghasemikasra39@gmail.com</p>
-            
-            <h2>11. Additional Information for TikTok</h2>
-            <p>As required by TikTok's developer terms:</p>
-            <ul>
-                <li>This application uses TikTok's Content Posting API</li>
-                <li>Data obtained from TikTok is used solely for posting video content</li>
-                <li>Users can revoke access at any time through TikTok's settings</li>
-                <li>We comply with TikTok's Developer Terms of Service and API Terms of Use</li>
-            </ul>
-            
         </div>
-    </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Privacy <span class="gradient-text">Policy</span></h1>
+            <p>How we handle your data and protect your privacy.</p>
+        </div>
+    </section>
+
+    <!-- Privacy Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-container">
+                <div class="content-card">
+                    <p class="updated-date">Last updated: August 10, 2026</p>
+
+                    <h2>1. Introduction</h2>
+                    <p>This Privacy Policy describes how MakeIt ("the Application", "we", "our") handles information when you use our desktop application for gaming content automation.</p>
+                    <p>MakeIt is a personal automation tool designed for individual content creators. We are committed to protecting your privacy and being transparent about our data practices.</p>
+
+                    <h2>2. Information We Collect</h2>
+                    
+                    <h3>2.1 Information You Provide</h3>
+                    <ul>
+                        <li><strong>API Credentials:</strong> TikTok and Instagram API tokens that you configure in the application</li>
+                        <li><strong>AWS Credentials:</strong> Amazon S3 access keys for temporary file hosting</li>
+                        <li><strong>Video Content:</strong> Gameplay recordings that you process through the application</li>
+                    </ul>
+
+                    <h3>2.2 Information from Third-Party Platforms</h3>
+                    <p>When you connect your TikTok account, we receive:</p>
+                    <ul>
+                        <li>OAuth access tokens (for posting on your behalf)</li>
+                        <li>Your TikTok user ID</li>
+                        <li>Post IDs for content we upload</li>
+                    </ul>
+
+                    <h3>2.3 Information We Do NOT Collect</h3>
+                    <ul>
+                        <li>We do not collect personal information beyond what's needed for the API connections</li>
+                        <li>We do not track your usage or behavior</li>
+                        <li>We do not collect analytics or telemetry</li>
+                        <li>We do not have access to your TikTok followers, messages, or other account data</li>
+                    </ul>
+
+                    <h2>3. How We Use Information</h2>
+                    <table>
+                        <tr>
+                            <th>Data Type</th>
+                            <th>Purpose</th>
+                            <th>Storage Location</th>
+                        </tr>
+                        <tr>
+                            <td>API Credentials</td>
+                            <td>Authenticate with TikTok/Instagram APIs to post content</td>
+                            <td>Local files on your computer only</td>
+                        </tr>
+                        <tr>
+                            <td>Video Files</td>
+                            <td>Process and convert for social media posting</td>
+                            <td>Temporarily on AWS S3, deleted after posting</td>
+                        </tr>
+                        <tr>
+                            <td>Post History</td>
+                            <td>Track successful posts and avoid duplicates</td>
+                            <td>Local SQLite database on your computer</td>
+                        </tr>
+                    </table>
+
+                    <h2>4. Data Storage and Security</h2>
+
+                    <h3>4.1 Local Storage</h3>
+                    <p>All sensitive data (API keys, credentials, configuration) is stored locally on your computer in configuration files. We recommend:</p>
+                    <ul>
+                        <li>Keeping your credentials file secure and not sharing it</li>
+                        <li>Using your operating system's security features</li>
+                        <li>Not committing credentials to version control</li>
+                    </ul>
+
+                    <h3>4.2 Temporary Cloud Storage</h3>
+                    <p>Video files are temporarily uploaded to Amazon S3 to provide URLs for TikTok's Content Posting API. These files are:</p>
+                    <ul>
+                        <li>Uploaded to your own AWS S3 bucket (that you configure)</li>
+                        <li>Automatically deleted after successful posting</li>
+                        <li>Deleted within 24 hours even if posting fails</li>
+                    </ul>
+
+                    <h2>5. Data Sharing</h2>
+                    <p>We do not sell, rent, or share your personal information with third parties. Data is only shared with:</p>
+                    <ul>
+                        <li><strong>TikTok:</strong> Video content and captions you choose to post</li>
+                        <li><strong>Instagram:</strong> Video content and captions you choose to post</li>
+                        <li><strong>Amazon Web Services:</strong> Temporary video file hosting (in your own bucket)</li>
+                    </ul>
+                    <p>All sharing is initiated by you and necessary for the Application's core functionality.</p>
+
+                    <h2>6. Your Rights and Choices</h2>
+                    <p>You have full control over your data:</p>
+                    <ul>
+                        <li><strong>Access:</strong> All data is stored locally on your computer and you can view it anytime</li>
+                        <li><strong>Deletion:</strong> Delete any local files to remove your data completely</li>
+                        <li><strong>Revocation:</strong> Revoke TikTok/Instagram access through their respective settings pages</li>
+                        <li><strong>Disconnect:</strong> Remove your API credentials from the configuration to stop all API access</li>
+                    </ul>
+
+                    <h2>7. TikTok Data Usage</h2>
+                    <p>In compliance with TikTok's developer requirements:</p>
+                    <ul>
+                        <li>We only request the minimum permissions needed (video.upload, video.publish)</li>
+                        <li>We only access your account to post content you explicitly choose to share</li>
+                        <li>We do not access your followers, following list, likes, or messages</li>
+                        <li>We do not store TikTok data beyond what's needed for posting functionality</li>
+                        <li>Access tokens are stored securely and only used for their intended purpose</li>
+                    </ul>
+
+                    <h2>8. Children's Privacy</h2>
+                    <p>MakeIt is not intended for use by anyone under the age of 13. We do not knowingly collect information from children under 13.</p>
+
+                    <h2>9. Changes to This Policy</h2>
+                    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.</p>
+
+                    <h2>10. Contact Us</h2>
+                    <p>If you have questions about this Privacy Policy or our data practices, please contact:</p>
+                    <p>Email: <a href="mailto:ghasemikasra39@gmail.com">ghasemikasra39@gmail.com</a></p>
+
+                    <h2>11. Additional Information for TikTok</h2>
+                    <p>As required by TikTok's developer terms:</p>
+                    <ul>
+                        <li>This application uses TikTok's Content Posting API</li>
+                        <li>Data obtained from TikTok is used solely for posting video content</li>
+                        <li>Users can revoke access at any time through TikTok's settings</li>
+                        <li>We comply with TikTok's Developer Terms of Service and API Terms of Use</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🎮</span>
+                        <span class="logo-text">MakeIt</span>
+                    </a>
+                    <p>Automated gaming content pipeline for content creators. Transform gameplay into viral social media content.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="https://github.com/ghasemikasra39" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Kasra Ghasemi. All rights reserved.</p>
+                <p class="footer-contact">Contact: <a href="mailto:ghasemikasra39@gmail.com">ghasemikasra39@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

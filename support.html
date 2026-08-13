@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support & FAQ - MakeIt Gaming Content Automation</title>
+    <meta name="description" content="Get help with MakeIt. Find answers to frequently asked questions and contact support.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🎮</span>
+                <span class="logo-text">MakeIt</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="support.html" class="nav-link active">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Support & <span class="gradient-text">FAQ</span></h1>
+            <p>Find answers to common questions and get help with MakeIt.</p>
+        </div>
+    </section>
+
+    <!-- Support Options -->
+    <section class="support-section">
+        <div class="container">
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">📧</div>
+                    <h3>Email Support</h3>
+                    <p>Have a question or need help? Send us an email and we'll get back to you as soon as possible.</p>
+                    <a href="mailto:ghasemikasra39@gmail.com" class="btn btn-outline">Send Email</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">📖</div>
+                    <h3>Documentation</h3>
+                    <p>Learn how to set up and use MakeIt with our comprehensive how-it-works guide.</p>
+                    <a href="how-it-works.html" class="btn btn-outline">View Guide</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">💻</div>
+                    <h3>GitHub</h3>
+                    <p>Report issues, suggest features, or contribute to the project on GitHub.</p>
+                    <a href="https://github.com/ghasemikasra39" target="_blank" class="btn btn-outline">Visit GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section" style="background: var(--dark-lighter);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is MakeIt?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            MakeIt is a desktop application that automates the gaming content creation pipeline. It processes your gameplay recordings, converts them to vertical format for social media, adds custom overlays, and automatically posts to TikTok and Instagram.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What platforms does MakeIt support?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            MakeIt currently supports posting to TikTok (via the Content Posting API) and Instagram (via the Graph API). Both platforms receive optimized vertical video content in 9:16 format.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do I need a TikTok Developer account?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes, to use the TikTok posting feature, you need a TikTok Developer account with access to the Content Posting API. This allows MakeIt to post videos directly to your TikTok account on your behalf.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is my data safe with MakeIt?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes. MakeIt is a local desktop application — all video processing happens on your machine. Your API credentials are stored locally and never sent to any third-party servers. Video files are only temporarily uploaded to AWS S3 (which you control) during the posting process and are automatically deleted afterward.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What video formats are supported?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            MakeIt supports most common video formats including MP4, MOV, MKV, and AVI. Videos are processed using FFmpeg, which provides broad format compatibility and high-quality encoding.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I customize the video overlays?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes! MakeIt supports custom intros, outros, and text overlays. You can create branded content with your own visual elements to maintain a consistent look across all your posts.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What are the system requirements?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            MakeIt runs on macOS 12.0 or later. You'll need Python 3.11+ and FFmpeg installed. We recommend at least 8GB of RAM for smooth video processing, especially with high-resolution 4K content.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How does automatic posting work?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            After processing, videos are temporarily uploaded to your AWS S3 bucket to generate a public URL. This URL is then submitted to TikTok/Instagram's APIs for posting. Once the platform confirms the upload, the temporary file is automatically deleted from S3.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-info">
+                <h3>Still Have Questions?</h3>
+                <p>Can't find what you're looking for? Reach out directly and we'll help you out.</p>
+                <a href="mailto:ghasemikasra39@gmail.com" class="contact-email">
+                    <span>📧</span>
+                    ghasemikasra39@gmail.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🎮</span>
+                        <span class="logo-text">MakeIt</span>
+                    </a>
+                    <p>Automated gaming content pipeline for content creators. Transform gameplay into viral social media content.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="https://github.com/ghasemikasra39" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Kasra Ghasemi. All rights reserved.</p>
+                <p class="footer-contact">Contact: <a href="mailto:ghasemikasra39@gmail.com">ghasemikasra39@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
