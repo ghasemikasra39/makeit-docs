@@ -1345,3 +1345,108 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* ============================================
+   Language Switcher
+   ============================================ */
+
+.nav-lang {
+    position: relative;
+    margin-left: 8px;
+}
+
+.lang-dropdown {
+    position: relative;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--gray-700);
+    border-radius: var(--radius);
+    color: var(--gray-300);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--gray-600);
+    color: var(--white);
+}
+
+.lang-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 8px;
+    min-width: 140px;
+    background: var(--dark-lighter);
+    border: 1px solid var(--gray-700);
+    border-radius: var(--radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+    z-index: 1001;
+}
+
+.lang-dropdown:hover .lang-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-menu a {
+    display: block;
+    padding: 10px 16px;
+    color: var(--gray-400);
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.lang-menu a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--white);
+}
+
+.lang-menu a.active {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--primary-light);
+}
+
+.lang-menu a:first-child {
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.lang-menu a:last-child {
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+
+@media (max-width: 768px) {
+    .nav-lang {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+    
+    .lang-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        margin-top: 8px;
+        box-shadow: none;
+    }
+    
+    .lang-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
