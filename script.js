@@ -127,3 +127,40 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 });
+
+// Copy Link Function for Share Button
+function copyLink() {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(() => {
+        const btn = document.querySelector('.share-btn.copy-link');
+        const span = btn.querySelector('span');
+        const originalText = span.textContent;
+        
+        btn.classList.add('copied');
+        span.textContent = 'Copied!';
+        
+        setTimeout(() => {
+            btn.classList.remove('copied');
+            span.textContent = originalText;
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy:', err);
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = url;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        
+        const btn = document.querySelector('.share-btn.copy-link');
+        const span = btn.querySelector('span');
+        btn.classList.add('copied');
+        span.textContent = 'Copied!';
+        
+        setTimeout(() => {
+            btn.classList.remove('copied');
+            span.textContent = 'Copy Link';
+        }, 2000);
+    });
+}
