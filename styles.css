@@ -1116,3 +1116,207 @@ section {
 .animate-fade-in {
     animation: fadeInUp 0.6s ease forwards;
 }
+
+/* ============================================
+   Stats Section
+   ============================================ */
+
+.stats-section {
+    padding: 60px 0;
+    background: var(--dark-lighter);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 32px 20px;
+    background: var(--dark);
+    border: 1px solid var(--gray-800);
+    border-radius: var(--radius-lg);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    color: var(--gray-400);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* ============================================
+   Featured Video Section
+   ============================================ */
+
+.featured-video-section {
+    padding: 80px 0;
+    background: var(--dark);
+}
+
+.featured-video-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.featured-video-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    border: 2px solid var(--gray-800);
+}
+
+.featured-video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ============================================
+   Games Section
+   ============================================ */
+
+.games-section {
+    padding: 80px 0;
+    background: var(--dark-lighter);
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.game-card {
+    padding: 28px 20px;
+    background: var(--dark);
+    border: 1px solid var(--gray-800);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.game-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.game-icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.game-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: var(--white);
+}
+
+.game-genre {
+    font-size: 0.85rem;
+    color: var(--gray-500);
+}
+
+/* ============================================
+   Community / Testimonials Section
+   ============================================ */
+
+.community-section {
+    padding: 80px 0;
+    background: var(--dark);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.testimonial-card {
+    padding: 32px;
+    background: var(--dark-lighter);
+    border: 1px solid var(--gray-800);
+    border-radius: var(--radius-lg);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    border-color: var(--gray-700);
+    transform: translateY(-4px);
+}
+
+.testimonial-content {
+    margin-bottom: 20px;
+}
+
+.testimonial-content p {
+    font-size: 1.05rem;
+    color: var(--gray-300);
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--gray-500);
+    font-size: 0.9rem;
+}
+
+.author-icon {
+    font-size: 1.5rem;
+}
+
+/* ============================================
+   Responsive Updates
+   ============================================ */
+
+@media (max-width: 900px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
